@@ -1,0 +1,12 @@
+Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/Exp16R/static/<filename>' (OPTIONS, HEAD, GET) -> Exp16Room.static>,
+ <Rule '/Exp16R/' (OPTIONS, HEAD, GET) -> Exp16Room.Exp16Room_index>,
+ <Rule '/Exp16R/server' (OPTIONS, HEAD, GET) -> Exp16Room.Exp16Room_server>,
+ <Rule '/Exp16R/doc' (OPTIONS, HEAD, GET) -> Exp16Room.Exp16Room_doc>,
+ <Rule '/Exp16R/egg_hunt' (OPTIONS, HEAD, GET) -> Exp16Room.Exp16Room_egg_hunt>,
+ <Rule '/Exp16R/album' (OPTIONS, HEAD, GET, POST) -> Exp16Room.Exp16Room_album>,
+ <Rule '/Exp16R/album/show' (OPTIONS, HEAD, GET) -> Exp16Room.Exp16Room_album_show>,
+ <Rule '/Exp16R/members' (OPTIONS, HEAD, GET) -> Exp16Room.Exp16Room_members>,
+ <Rule '/' (OPTIONS, HEAD, GET) -> flask_app_index>,
+ <Rule '/help_info' (OPTIONS, HEAD, GET) -> flask_app_help_info>,
+ <Rule '/error_help' (OPTIONS, HEAD, GET) -> flask_app_error_help>])

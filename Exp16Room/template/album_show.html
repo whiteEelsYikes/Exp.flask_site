@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+ 这里的瀑布流 因为我不是很懂web包括js所以就这样勉勉强强的用吧
+ 在后端留了接口 (但是因为工作量很大等一些原因 接口可能不全 就是后端的py flask 没有写完)
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../static/js/album.js"></script>
+    <link rel="icon" href="../static/icon/album.ico" type ="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/css/album_show.css">
+</head>
+
+<body>
+
+    <div id="waterfull">
+
+        {% for key,value in album_dict.items() %}
+            {% for key_, value_ in value.items() %}
+                <div class="box">
+                    <div class="box_image"><img src="{{ value_['href'] }}" alt="">
+                        <p> {{ value_['info'] }} </p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+    </div>
+
+</body>
+
+</html>

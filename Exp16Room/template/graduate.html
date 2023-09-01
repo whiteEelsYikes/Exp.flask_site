@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://unpkg.com/meting@1.2.0/dist/Meting.min.js"></script>
+
+    <title>我们毕业啦！！！</title>
+    <link rel="icon" href="../static/icon/egg_hunt.ico" type ="image/x-icon">
+    <link rel="stylesheet" href="static/css/graduate_normalize.min.css">
+    <link rel="stylesheet" href="static/css/graduate_style.css">
+</head>
+<body>
+
+<!--这里实现 底部音乐播放器  设置了自动播放 测试有时候抽风 不会自动播放-->
+<div id="aplayer" class="aplayer" data-autoplay="true"  data-id="7527798236" data-server="tencent" data-type="playlist" data-fixed="true" data-listfolded="true" data-order="random" data-theme="#F58EA8"></div>
+<!--
+具体参数介绍如下：data-id: 歌曲/专辑/歌单ID
+
+data-server: 音乐平台，支持如下参数：
+netease （网易云音乐）
+tencent （qq音乐）
+xiami （虾米音乐）
+kugou （酷狗音乐）
+baidu （百度音乐）
+
+data-type: 请求类型，支持如下参数：
+song （单曲）
+album （专辑）
+playlist （歌单）
+search （搜索）
+
+data-mode: 播放模式，支持如下参数：
+random （随机）
+single （单曲）
+circulation （列表循环）
+order （列表）
+
+data-autoplay: 自动播放 ，支持如下参数：
+true
+false
+
+原文链接：https://blog.csdn.net/qq_44753710/article/details/117532351
+-->
+
+
+<!--这里实现 相机拍照的效果-->
+<div class="container" tabIndex="0">
+  <div class="photo" style="background-image:url('static/images/graduate_photo.jpg');"></div>
+  <div class="instructions">网页双击图片播放动画</div>
+  <div class="shutter" style="--flaps: 6">
+    <div class="flap" style="--i: 0"></div>
+    <div class="flap" style="--i: 1"></div>
+    <div class="flap" style="--i: 2"></div>
+    <div class="flap" style="--i: 3"></div>
+    <div class="flap" style="--i: 4"></div>
+    <div class="flap" style="--i: 5"></div>
+  </div>
+</div>
+
+
+<!--这里实现 彩纸-->
+<script type="text/javascript">
+var end = Date.now() + (15 * 1000);
+
+// go Buckeyes!
+var colors = ['#bb0000', '#ffffff'];
+
+(function frame() {
+  confetti({
+    particleCount: 2,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 },
+    colors: colors
+  });
+  confetti({
+    particleCount: 2,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 },
+    colors: colors
+  });
+
+  if (Date.now() < end) {
+    requestAnimationFrame(frame);
+  }
+}());var end = Date.now() + (15 * 1000);
+
+// go Buckeyes!
+var colors = ['#bb0000', '#ffffff'];
+
+(function frame() {
+  confetti({
+    particleCount: 2,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 },
+    colors: colors
+  });
+  confetti({
+    particleCount: 2,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 },
+    colors: colors
+  });
+
+  if (Date.now() < end) {
+    requestAnimationFrame(frame);
+  }
+}());
+</script>
+
+</body>
+</html>

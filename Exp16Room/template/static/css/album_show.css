@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#waterfull {
+    width: 1200px;
+    height: auto;
+    position: relative;
+}
+
+.box {
+    float: left;
+    padding: 5px;
+}
+
+.box_image {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px #ccc
+}
+
+#waterfull img {
+    width: 278px;
+    height: auto;
+}
