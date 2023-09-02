@@ -1,1 +1,12 @@
-![image-20230831210159096](./static/markdown_images/SMB_server.images/image-20230831210159096.png)![image-20230831210159390](./static/markdown_images/SMB_server.images/image-20230831210159390.png)![image-20230831210159725](./static/markdown_images/SMB_server.images/image-20230831210159725.png)![image-20230831210159932](./static/markdown_images/SMB_server.images/image-20230831210159932.png)![image-20230831210200136](./static/markdown_images/SMB_server.images/image-20230831210200136.png)![image-20230831210200300](./static/markdown_images/SMB_server.images/image-20230831210200300.png)
+
+# SMB服务使用说明
+
+`SMBv2` `SMBv3`
+
+---
+
+## 使用方式
+
+通过SMB相关扩展来连接
+win直接在资源管理器中连接
+

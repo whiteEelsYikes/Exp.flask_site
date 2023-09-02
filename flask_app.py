@@ -1,9 +1,9 @@
 from flask import Flask
-from flask import render_template, Markup
+from flask import render_template, Markup, request, abort
 import markdown
-import logging
 
 flask_app = Flask(__name__, static_folder='./templates/static', template_folder='./templates', root_path='./')
+flask_app.config['JSON_AS_ASCII'] = False
 
 # 下面这里开始导入蓝图
 from Exp16Room import *

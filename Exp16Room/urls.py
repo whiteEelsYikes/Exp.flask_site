@@ -81,7 +81,9 @@ def Exp16Room_album_show():
 def Exp16Room_members():
     if request.method == "GET":
         group = request.args.get('group')
+        return abort(404)
     elif request.method == "POST":
-        pass
+        return abort(404)
+    return abort(404)
 
 

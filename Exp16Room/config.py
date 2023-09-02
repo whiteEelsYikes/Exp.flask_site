@@ -46,6 +46,11 @@ server_config = {
 
 
 documentation_config = {
+    'Docsify': {
+        'html': 'doc.html',
+        'doc': 'Docsify.md',
+        'title': 'Docsify模板',
+    },
     'SMB': {
         'html': 'doc.html',
         'doc': 'SMB_server_doc.md',
